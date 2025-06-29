@@ -27,7 +27,7 @@ const DeleteProductDialog = () => {
     try {
       setDeleteLoading(true);
       await axiosInstance.delete(`/product/delete/${params.id}`);
-      navigate("/");
+      navigate("/list");
     } catch (error) {
       console.log("Delete product api hit failed...");
       console.log(error);

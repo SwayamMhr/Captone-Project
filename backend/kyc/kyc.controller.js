@@ -1,6 +1,7 @@
 // routes/kyc.controller.js
 import express from "express";
 import Yup from "yup";
+import mongoose from "mongoose";
 import isUser from "../middleware/authentication.middleware.js";
 import KYCTable from "../models/kyc.model.js";
 

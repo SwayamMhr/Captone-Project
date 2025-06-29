@@ -12,6 +12,7 @@ import AuthLayout from "../layout/AuthLayout";
 import GuestLayout from "../layout/GuestLayout";
 import AddProduct from "./pages/AddProduct";
 import KYCForm from "./pages/KycForm";
+import List from "./pages/List";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -25,6 +26,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/test" element={<Test />} />
         <Route path="/about" element={<About />} />
         <Route path="/kyc" element={<KYCForm />} />
+        <Route path="/list" element={<List />} />
       </Route>
 
       {/* public routes */}

@@ -16,13 +16,13 @@ import * as yup from "yup";
 import axiosInstance from "../../lib/axios.instance";
 
 const categoryList = [
-  "grocery",
-  "electronics",
-  "electrical",
-  "clothing",
-  "kitchen",
-  "kids",
-  "laundry",
+  "bike",
+  "scooter",
+  "cycle",
+  "mopeds",
+  "electrical bike",
+  "electrical scooter",
+  "electrical cycle",
 ];
 const EditProduct = () => {
   const params = useParams();
@@ -161,13 +161,15 @@ const EditProduct = () => {
             <FormControl fullWidth>
               <InputLabel>Category</InputLabel>
               <Select label="Category" {...formik.getFieldProps("category")}>
-                <MenuItem value={"grocery"}>Grocery</MenuItem>
-                <MenuItem value={"electronics"}>Electronics</MenuItem>
-                <MenuItem value={"clothing"}>Clothing</MenuItem>
-                <MenuItem value={"electrical"}>Electrical</MenuItem>
-                <MenuItem value={"kids"}>Kids</MenuItem>
-                <MenuItem value={"kitchen"}>Kitchen</MenuItem>
-                <MenuItem value={"laundry"}>Laundry</MenuItem>
+                <MenuItem value={"bike"}>Bike</MenuItem>
+                <MenuItem value={"scooter"}>Scooter</MenuItem>
+                <MenuItem value={"cycle"}>Cycle</MenuItem>
+                <MenuItem value={"mopeds"}>Mopeds</MenuItem>
+                <MenuItem value={"electrical bike"}>Electrical Bike</MenuItem>
+                <MenuItem value={"electrical scooter"}>
+                  Electrical Scooter
+                </MenuItem>
+                <MenuItem value={"electrical cycle"}>Electrical Cycle</MenuItem>
               </Select>
               {formik.touched.category && formik.errors.category ? (
                 <FormHelperText error>{formik.errors.category}</FormHelperText>

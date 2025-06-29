@@ -18,7 +18,7 @@ app.use(userController);
 app.use(productController);
 
 // network port
-const PORT = 8000;
+const PORT = 8080;
 
 app.listen(PORT, () => {
   console.log(`App is listening on port ${PORT}`);

@@ -22,13 +22,14 @@ router.post(
         .required()
         .trim()
         .oneOf([
-          "grocery",
-          "electronics",
-          "electrical",
-          "clothing",
-          "kitchen",
-          "kids",
-          "laundry",
+          "bike",
+          "scooter",
+          "cycle",
+          "mopeds",
+          "electrical bike",
+          "electrical scooter",
+          "electrical cycle",
+          ,
         ]),
 
       description: Yup.string().required().trim().min(10).max(1000),
@@ -171,13 +172,13 @@ router.put(
         .required()
         .trim()
         .oneOf([
-          "grocery",
-          "electronics",
-          "electrical",
-          "clothing",
-          "kitchen",
-          "kids",
-          "laundry",
+          "bike",
+          "scooter",
+          "cycle",
+          "mopeds",
+          "electrical bike",
+          "electrical scooter",
+          "electrical cycle",
         ]),
 
       image: Yup.string().notRequired().trim(),

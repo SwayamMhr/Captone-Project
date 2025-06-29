@@ -1,4 +1,4 @@
-import Yup from 'yup';
+import Yup from "yup";
 
 const productValidationSchema = Yup.object({
   name: Yup.string().required().trim().max(155),
@@ -9,13 +9,13 @@ const productValidationSchema = Yup.object({
     .required()
     .trim()
     .oneOf([
-      'grocery',
-      'electronics',
-      'electrical',
-      'clothing',
-      'kitchen',
-      'kids',
-      'laundry',
+      "bike",
+      "scooter",
+      "cycle",
+      "mopeds",
+      "electrical bike",
+      "electrical scooter",
+      "electrical cycle",
     ]),
 
   image: Yup.string().notRequired().trim(),
