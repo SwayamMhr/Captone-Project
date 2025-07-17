@@ -63,6 +63,7 @@ const AddProduct = () => {
           `https://api.cloudinary.com/v1_1/${cloud_name}/image/upload`,
           formData
         );
+        
 
         imageUrl = res?.data?.secure_url;
       } catch (error) {

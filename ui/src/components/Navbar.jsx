@@ -21,11 +21,11 @@ const drawerWidth = 240;
 
 const navItems = [
   { id: 1, label: "Home", route: "/" },
-  { id: 2, label: "Services", route: "/services" },
+  // { id: 2, label: "Services", route: "/services" },
   { id: 3, label: "Booking", route: "/booking" },
   { id: 4, label: "Two Wheeler List", route: "/list" },
-  { id: 5, label: "Blogs", route: "/blogs" },
-  { id: 6, label: "Contact Us", route: "/contact" },
+  // { id: 5, label: "Blogs", route: "/blogs" },
+  // { id: 6, label: "Contact Us", route: "/contact" },
 ];
 
 const Navbar = (props) => {
